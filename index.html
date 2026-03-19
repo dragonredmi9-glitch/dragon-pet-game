@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon Pet Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🐉 Dragon Pet Game</h1>
+        <div class="game-board">
+            <div class="dragon-display">
+                <canvas id="dragonCanvas" width="400" height="300"></canvas>
+                <p id="dragonName" class="dragon-name">My Dragon</p>
+            </div>
+            
+            <div class="stats-panel">
+                <div class="stat">
+                    <label>Hunger:</label>
+                    <div class="stat-bar">
+                        <div id="hungerBar" class="stat-fill hunger"></div>
+                    </div>
+                    <span id="hungerValue">100%</span>
+                </div>
+                
+                <div class="stat">
+                    <label>Happiness:</label>
+                    <div class="stat-bar">
+                        <div id="happinessBar" class="stat-fill happiness"></div>
+                    </div>
+                    <span id="happinessValue">100%</span>
+                </div>
+                
+                <div class="stat">
+                    <label>Energy:</label>
+                    <div class="stat-bar">
+                        <div id="energyBar" class="stat-fill energy"></div>
+                    </div>
+                    <span id="energyValue">100%</span>
+                </div>
+                
+                <div class="stat">
+                    <label>Health:</label>
+                    <div class="stat-bar">
+                        <div id="healthBar" class="stat-fill health"></div>
+                    </div>
+                    <span id="healthValue">100%</span>
+                </div>
+            </div>
+            
+            <div class="actions-panel">
+                <button id="feedBtn" class="action-btn feed">🍖 Feed</button>
+                <button id="playBtn" class="action-btn play">🎮 Play</button>
+                <button id="sleepBtn" class="action-btn sleep">😴 Sleep</button>
+                <button id="petBtn" class="action-btn pet">🤚 Pet</button>
+                <button id="healBtn" class="action-btn heal">🧪 Heal</button>
+            </div>
+            
+            <div class="info-panel">
+                <p id="statusMessage">Your dragon is happy!</p>
+                <p id="ageDisplay">Age: 0 days</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
